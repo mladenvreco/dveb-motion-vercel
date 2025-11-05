@@ -1,0 +1,61 @@
+/* motion-classic.css — DVeb Motion™ Color Palettes */
+
+/* light mode — paleta 1 (vibrant energy) */
+.bg-light-vibrant { background-color: #ffffff; }
+.surface-light-vibrant { background-color: #f4f6f8; }
+.text-light-vibrant-primary { color: #1f2937; }
+.text-light-vibrant-secondary { color: #4b5563; }
+.border-light-vibrant { border: 1px solid #e5e7eb; }
+.btn-light-vibrant-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+.btn-light-vibrant-secondary {
+  background-color: #e91c4c;
+  color: #ffffff;
+}
+
+/* light mode — paleta 2 (warm health) */
+.bg-light-warm { background-color: #fffbf9; }
+.surface-light-warm { background-color: #fff5f0; }
+.text-light-warm-primary { color: #333333; }
+.text-light-warm-secondary { color: #6b7280; }
+.border-light-warm { border: 1px solid #ede2d9; }
+.btn-light-warm-primary {
+  background-color: #f97316;
+  color: #ffffff;
+}
+.btn-light-warm-secondary {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+/* light mode — paleta 3 (minimal modern) */
+.bg-light-modern { background-color: #fafafa; }
+.surface-light-modern { background-color: #ffffff; }
+.text-light-modern-primary { color: #111827; }
+.text-light-modern-secondary { color: #475569; }
+.border-light-modern { border: 1px solid #d1d5db; }
+.btn-light-modern-primary {
+  background-color: #7c3aed;
+  color: #ffffff;
+}
+.btn-light-modern-secondary {
+  background-color: #22d3ee;
+  color: #ffffff;
+}
+
+/* dark mode */
+.bg-dark { background-color: #121212; }
+.surface-dark { background-color: #1e1e1e; }
+.text-dark-primary { color: #e5e7eb; }
+.text-dark-secondary { color: #9ca3af; }
+.border-dark { border: 1px solid #2c2c2c; }
+.btn-dark-primary {
+  background-color: #cc8cfc;
+  color: #121212;
+}
+.btn-dark-secondary {
+  background-color: #cda631;
+  color: #121212;
+}

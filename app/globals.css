@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --primary: #7c3aed;
+  --secondary: #22d3ee;
+  --text-primary: #111827;
+  --text-secondary: #475569;
+  --divider: #d1d5db;
+  --success: #16a34a;
+  --error: #dc2626;
+}
+
+:root.dark {
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --primary: #cc8cfc;
+  --secondary: #cda631;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --divider: #2c2c2c;
+  --success: #16a34a;
+  --error: #dc2626;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
+  transition: color 0.3s, background-color 0.3s;
+  line-height: 1.5;
+  font-size: 16px;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@font-face {
+  font-family: "Gagalin";
+  src: url("/fonts/Gagalin-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gagalin {
+  font-family: "Gagalin", sans-serif;
+}
+
+body.dark {
+  --bg: #121212;
+  --surface: #1e1e1e;
+  --primary: #cc8cfc;
+  --secondary: #cda631;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --divider: #2c2c2c;
+}

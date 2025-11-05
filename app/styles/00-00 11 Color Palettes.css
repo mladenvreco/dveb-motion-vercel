@@ -1,0 +1,76 @@
+/* motion.css — DVeb Motion™ Color Palettes */
+
+/* light mode — paleta 1 (vibrant energy) */
+:root.light-vibrant {
+  --background: #ffffff;
+  --surface: #f4f6f8;
+  --primary: #2563eb;
+  --secondary: #e91c4c;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --divider: #e5e7eb;
+}
+
+/* light mode — paleta 2 (warm health) */
+:root.light-warm {
+  --background: #fffbf9;
+  --surface: #fff5f0;
+  --primary: #f97316;
+  --secondary: #10b981;
+  --text-primary: #333333;
+  --text-secondary: #6b7280;
+  --divider: #ede2d9;
+}
+
+/* light mode — paleta 3 (minimal modern) */
+:root.light-modern {
+  --background: #fafafa;
+  --surface: #ffffff;
+  --primary: #7c3aed;
+  --secondary: #22d3ee;
+  --text-primary: #111827;
+  --text-secondary: #475569;
+  --divider: #d1d5db;
+}
+
+/* dark mode */
+:root.dark {
+  --background: #121212;
+  --surface: #1e1e1e;
+  --primary: #cc8cfc;
+  --secondary: #cda631;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --divider: #2c2c2c;
+}
+
+/* generic usage examples */
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.card {
+  background-color: var(--surface);
+  border: 1px solid var(--divider);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+button.primary {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+button.secondary {
+  background-color: var(--secondary);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}

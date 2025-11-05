@@ -1,0 +1,11 @@
+.pricingContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 16px;
+
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}

@@ -1,0 +1,157 @@
+.page {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  padding: 40px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+.header {
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+}
+
+.lead {
+  color: var(--text-secondary);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section {
+  max-width: 1100px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--divider);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.bullets {
+  list-style: disc;
+  margin-left: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: transparent;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px dashed #e6e9ef;
+}
+
+.dpo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.muted {
+  color: var(--text-secondary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text-primary);
+  outline: none;
+}
+
+.textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--divider);
+  border-radius: 8px;
+  resize: vertical;
+  min-height: 80px;
+  background: #fff;
+  color: var(--text-primary);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  margin-top: 6px;
+}
+
+.primary {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--divider);
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.feedback {
+  margin-top: 8px;
+}
+
+.successBox {
+  background: rgba(22, 163, 74, 0.08);
+  color: var(--success);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(22, 163, 74, 0.12);
+}
+
+.errorBox {
+  background: rgba(220, 38, 38, 0.06);
+  color: var(--error);
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(220, 38, 38, 0.08);
+}
+
+.footer {
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.small {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

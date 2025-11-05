@@ -1,0 +1,201 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toggleGroup button,
+.filterGroup button {
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.activeBtn {
+  background: var(--primary);
+  color: var(--text-primary);
+}
+
+.linkBtn {
+  color: var(--secondary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.chartPlaceholder {
+  height: 150px;
+  background: var(--divider);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.notificationList {
+  list-style: none;
+  padding: 0;
+}
+
+.notificationList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--divider);
+  padding: 0.6rem 0;
+}
+
+.notificationList li button {
+  margin-left: 0.3rem;
+  cursor: pointer;
+}
+
+.deviceList {
+  list-style: none;
+  padding: 0;
+}
+
+.deviceList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--divider);
+  padding: 0.6rem 0;
+}
+
+.connected {
+  color: var(--success);
+}
+
+.disconnected {
+  color: var(--error);
+}
+
+.manageBtn {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.3rem 0.8rem;
+}
+
+.connectBtn {
+  margin-top: 1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.settingsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.settingsGrid label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.settingsGrid select,
+.settingsGrid button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--divider);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.backupBtns div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.empty {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chart {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.barContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+}
+
+.bar {
+  flex: 1;
+  background: var(--secondary);
+  border-radius: 6px 6px 0 0;
+  transition: height 0.3s ease;
+}
+
+.placeholder {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.toggle .active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}

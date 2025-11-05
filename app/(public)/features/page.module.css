@@ -1,0 +1,157 @@
+.hero {
+  text-align: center;
+  padding: 64px 16px;
+  background-color: var(--bg);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+.heroCTA {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buttonPrimary {
+  background-color: var(--primary);
+  color: var(--surface);
+}
+
+.buttonPrimary:hover {
+  background-color: #5b21b6;
+}
+
+.buttonSecondary {
+  background-color: var(--secondary);
+  color: var(--text-primary);
+}
+
+.buttonSecondary:hover {
+  background-color: #06b6d4;
+}
+
+.featuresSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.featuresSection h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 32px;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.card p {
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.card {
+  position: relative;
+  background-color: var(--surface);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  /* overflow: hidden; <- ovo može ostati, ali pazimo na children */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.short {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.detailed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  background-color: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.card:hover .detailed {
+  opacity: 1;
+}
+
+.card:hover .short {
+  opacity: 0;
+}
+
+.cardCTA {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: var(--surface);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  position: relative;
+}
+
+.premiumBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primary);
+  color: var(--surface);
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 8px;
+}

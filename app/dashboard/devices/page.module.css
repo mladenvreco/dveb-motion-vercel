@@ -1,0 +1,139 @@
+/* LAYOUT */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.devicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.deviceCard {
+  background: var(--surface);
+  border: 1px solid var(--divider);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.deviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.connected {
+  border-left: 4px solid var(--success);
+}
+
+.disconnected {
+  border-left: 4px solid var(--error);
+}
+
+.deviceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deviceName {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.status {
+  font-size: 0.9rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.statusConnected {
+  background: var(--success);
+  color: white;
+}
+
+.statusDisconnected {
+  background: var(--error);
+  color: white;
+}
+
+.deviceInfo {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0.75rem 0;
+}
+
+.syncText {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/* BUTTONS */
+.disconnectBtn,
+.reconnectBtn,
+.connectBtn {
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  font-weight: 500;
+}
+
+.disconnectBtn {
+  background: var(--error);
+  color: white;
+}
+
+.disconnectBtn:hover {
+  background: #b91c1c;
+}
+
+.reconnectBtn {
+  background: var(--success);
+  color: white;
+}
+
+.reconnectBtn:hover {
+  background: #15803d;
+}
+
+.connectBtn {
+  background: var(--primary);
+  color: white;
+  margin-top: 1rem;
+}
+
+.connectBtn:hover {
+  background: #6d28d9;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
