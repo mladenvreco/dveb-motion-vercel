@@ -85,7 +85,7 @@ export default function ProfilePage() {
   if (!isLoggedIn) {
     return (
       <>
-        <p className={classes.error}>Log in to see profile page.</p>
+        <p>Log in to see profile page.</p>
         <button>
           <Link href={"/auth/login"}>Login</Link>
         </button>

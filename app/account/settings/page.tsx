@@ -5,6 +5,8 @@ import SettingsForm from "./SettingsForm";
 import { useTheme } from "@/app/context/ThemeContext";
 import type { Theme } from "@/app/context/ThemeContext";
 import classes from "./page.module.css";
+import { useAuth } from "@/app/context/AuthContext";
+import Link from "next/link";
 
 const DEFAULT_SETTINGS = {
   language: "en",
@@ -25,6 +27,7 @@ const DEFAULT_SETTINGS = {
 };
 
 export default function SettingsPage() {
+  const { isLoggedIn } = useAuth();
   const [settings, setSettings] = useState<any>(DEFAULT_SETTINGS);
   const { theme, setTheme } = useTheme();
 
@@ -54,6 +57,17 @@ export default function SettingsPage() {
       setTheme(newSettings.theme);
     }
   };
+
+  if (!isLoggedIn) {
+    return (
+      <>
+        <p>Log in to see settings.</p>
+        <button>
+          <Link href={"/auth/login"}>Login</Link>
+        </button>
+      </>
+    );
+  }
 
   return (
     <div className={classes.container}>

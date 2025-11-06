@@ -19,7 +19,7 @@ export default function DevicesPage() {
   };
 
   const handleConnectNew = () => {
-    alert("Connect new device functionality coming soon!");
+    // alert("Connect new device functionality coming soon!");
   };
 
   if (!isLoggedIn) {
